@@ -8,8 +8,10 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData.light(),
-      home: Scaffold(
-        body: LoginScreen(),
+      home: SafeArea(
+        child: Scaffold(
+          body: LoginScreen(),
+        ),
       ),
     );
   }
